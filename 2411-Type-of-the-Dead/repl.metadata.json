@@ -1,0 +1,40 @@
+{
+    "id": "c3f1a54f-6441-468b-80b5-a79f1d83c0b4",
+    "title": "2.4.11 Discussion and Projects - Handling Events",
+    "isPrivate": false,
+    "slug": "2411-Discussion-and-Projects-Handling-Events",
+    "wasPublished": false,
+    "timeCreated": "2021-10-04T02:18:37.983Z",
+    "timeUpdated": "2021-11-01T03:28:56.973Z",
+    "user": {
+        "id": 1659864,
+        "username": "RyanLugtu"
+    },
+    "language": "html",
+    "config": {
+        "isServer": null,
+        "isExtension": null,
+        "gitRemoteUrl": null,
+        "isVnc": null,
+        "doClone": null
+    },
+    "multiplayers": [],
+    "source": {
+        "release": {
+            "id": "d3e51b1a-7690-4fa0-98f9-5c88c1c25847",
+            "description": "The languages that make up the web.",
+            "hostedUrl": "https://release-d3e51b1a-7690-4fa0-98f9-5c88c1c25847.id.repl.co",
+            "user": {
+                "id": 987731,
+                "username": "ArnavBansal"
+            }
+        },
+        "deployment": {
+            "id": 105,
+            "domain": null
+        }
+    },
+    "domains": [],
+    "isAlwaysOn": false,
+    "isBoosted": false
+}

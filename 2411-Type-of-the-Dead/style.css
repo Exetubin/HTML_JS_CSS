@@ -1,0 +1,101 @@
+html, body {
+  background-color: cornsilk;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  width: 60%;
+  background-color: goldenrod;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #505050;
+}
+
+/* Chrome, Safari, Edge, Opera (remove stepper arrows from number input element)*/
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Firefox (remove stepper arrows from number input element)*/
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#DifficultyAreaHoriz, #TimeLeftAreaHoriz {
+  width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#DifficultyAreaVert, #TimeLeftAreaVert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+
+#Difficulty, #TimeLeft {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#DifficultyList {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 0px;
+}
+
+#DifficultyList option {
+  font-size: 10pt;
+}
+
+
+
+
+
+#Start, #Reset {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  border-radius: 8px;
+  line-height: 40px;
+  width: 100px;
+}
+
+
+
+
+#ButtonAreaHoriz {
+  text-align: center;
+}
+
+
+#Word1Vert, #Word2Vert, #Word3Vert, #Word4Vert, #Word5Vert {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+#Word1Horiz, #Word2Horiz, #Word3Horiz, #Word4Horiz, #Word5Horiz {
+  display: block;
+  text-align: center;
+}
+
+#Word1, #Word2, #Word3, #Word4, #Word5 {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #505050;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Type of the Dead</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+    <section>
+
+      <div id="DifficultyAreaVert">
+        <div id="DifficultyAreaHoriz">
+          <label for="Difficulty">Difficulty: </label>
+          <input type=range id="Difficulty" min="10" max="30" step="10" list="DifficultyList">
+          <datalist id="DifficultyList">
+            <option value="10" label="Easy (4 to 6 characters)"></option>
+            <option value="20" label="Normal (7 to 9 characters)"></option>
+            <option value="30" label="Hard (10 to 12 characters)"></option>
+          </datalist>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="ButtonAreaHoriz">
+        <button id="Start" title="Start" onclick="selectWords()" aria-label="Start">
+          Start
+        </button>
+
+        <button id="Reset" title="Reset" onclick="resetPage()" aria-label="Reset">
+          Reset
+        </button>
+      </div>
+
+      <hr>
+
+      <div id="Word1Vert">
+        <div id="Word1Horiz">
+          <label for="Word1" id="Word1Label"></label>
+          <br>
+          <input type=text id="Word1" disabled>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="Word2Vert">
+        <div id="Word2Horiz">
+          <label for="Word2" id="Word2Label"></label>
+          <br>
+          <input type=text id="Word2" disabled>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="Word3Vert">
+        <div id="Word3Horiz">
+          <label for="Word3" id="Word3Label"></label>
+          <br>
+          <input type=text id="Word3" disabled>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="Word4Vert">
+        <div id="Word4Horiz">
+          <label for="Word4" id="Word4Label"></label>
+          <br>
+          <input type=text id="Word4" disabled>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="Word5Vert">
+        <div id="Word5Horiz">
+          <label for="Word5" id="Word5Label"></label>
+          <br>
+          <input type=text id="Word5" disabled>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="TimeLeftAreaVert">
+        <div id="TimeLeftAreaHoriz">
+          <label for="TimeLeft">Time Left: </label>
+          <progress id="TimeLeft" max="200" value="0">
+          </progress>
+        </div>
+      </div>
+
+    
+
+    </section>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
