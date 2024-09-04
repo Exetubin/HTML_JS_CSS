@@ -1,0 +1,49 @@
+          <!--
+          <div id="FirstRow">
+            <div id="FirstNameVert">
+              <div id="FirstNameHoriz">
+                <label for="FirstName" id="FirstNameLabel">First Name</label>
+                <br>
+                <input type=text id="FirstName" title="First Name of the contact" required>
+              </div>
+            </div>
+        
+            <div id="LastNameVert">
+              <div id="LastNameHoriz">
+                <label for="LastName" id="LastNameLabel">Last Name</label>
+                <br>
+                <input type=text id="LastName" title="Last Name of the contact" required>
+              </div>
+            </div>
+          </div>
+  
+          
+          <div id="SecondRow">
+            <div id="PhoneNumberVert">
+              <div id="PhoneNumberHoriz">
+                <label for="PhoneNumber" id="PhoneNumberLabel">Phone Number <span>"(xxx) xxx-xxxx"</span></label>
+                <br>
+                <input type=tel id="PhoneNumber" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" title='Phone Number of the contact using format "(xxx) xxx-xxxx"' required>
+              </div>
+            </div>
+        
+            <div id="EMailVert">
+              <div id="EMailHoriz">
+                <label for="EMail" id="EMailLabel">E-Mail <span>"myemail321@email.com"</span></label>
+                <br>
+                <input type="email" id="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title='E-mail Address of the contact using format "myemail321@email.com"' required>
+              </div>
+            </div>
+            
+          </div>
+
+
+          <div id="ThirdRow">
+            <div id="SearchContactsVert">
+              <div id="SearchContactsHoriz">
+                <input id="SearchContactsChkBx" type="checkbox" name="SearchContactsChkBx">
+                <label id="SearchContactsChkBxLabel" for="SearchContactsChkBx">Search Contacts</label>
+              </div>
+            </div>
+          </div>
+          -->

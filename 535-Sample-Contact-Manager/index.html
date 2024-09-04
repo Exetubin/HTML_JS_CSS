@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sample Contact Manager with Search Capability</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  
+  <body>
+
+    <form id="MainForm">
+      <fieldset id="outer">
+  
+        <legend id="FieldsetLegend">
+          Sample Contact Manager
+        </legend>
+  
+        <div id="inner">
+
+          <div id="FirstNameHoriz">
+            <label for="FirstName" id="FirstNameLabel">First Name</label>
+            <br>
+            <input type=text id="FirstName" title="First Name of the contact" required>
+          </div>
+
+          <div id="LastNameHoriz">
+            <label for="LastName" id="LastNameLabel">Last Name</label>
+            <br>
+            <input type=text id="LastName" title="Last Name of the contact" required>
+          </div>
+
+          <div id="PhoneNumberHoriz">
+            <label for="PhoneNumber" id="PhoneNumberLabel">Phone Number <span>"(xxx) xxx-xxxx"</span></label>
+            <br>
+            <input type=tel id="PhoneNumber" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" title='Phone Number of the contact using format "(xxx) xxx-xxxx"' required>
+          </div>
+
+          <div id="EMailHoriz">
+            <label for="EMail" id="EMailLabel">E-Mail <span>"myemail321@email.com"</span></label>
+            <br>
+            <input type="email" id="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title='E-mail Address of the contact using format "myemail321@email.com"' required>
+          </div>
+
+          <div id="SearchContactsHoriz">
+            <input id="SearchContactsChkBx" type="checkbox" name="SearchContactsChkBx">
+            <label id="SearchContactsChkBxLabel" for="SearchContactsChkBx">Search Contacts</label>
+          </div>
+
+        </div>
+  
+      </fieldset>
+
+        <div id="ButtonArea">
+          <button id="CreateContact" title="Create Contact" onclick="createContact()" aria-label="Create Contact" disabled>
+            Create Contact
+          </button>
+  
+          <button id="ListContacts" title="List Contacts" onclick="listContactManagerContacts()" aria-label="List Contacts" disabled>
+            List All Contacts
+          </button>
+
+          <button id="AddManyContacts" title="Add Many Contacts" onclick="addManyContacts()" aria-label="Add Many Contacts">
+            Add Many Contacts
+          </button>
+          <!--
+          <button id="SearchContacts" title="Search Contacts" onclick="searchContacts()" aria-label="Search Contacts">
+            Search Contacts
+          </button>
+          -->
+        </div>
+            
+    </form>
+
+    <div id="ButtonAreaOutsideForm">
+      <button id="SearchContacts" title="Search Contacts" onclick="searchContacts()" aria-label="Search Contacts">
+        Search Contacts
+      </button>
+    </div>
+
+    <div id="PrevNext">
+      <button id="Previous" title="Previous" onclick="adjustContactManagerActivePageDisplay(this.id)" aria-label="Previous">
+        Previous
+      </button>
+
+      <div id="PrevNextSeparator">
+      </div>
+
+      <button id="Next" title="Next" onclick="adjustContactManagerActivePageDisplay(this.id)" aria-label="Next">
+        Next
+      </button>
+    </div>
+
+    <div id="ContactDisplay">
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>

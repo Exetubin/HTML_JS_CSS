@@ -1,0 +1,252 @@
+body {
+  background-color: cornsilk;
+}
+
+/**********************/
+/**********************/
+/**********************/
+#outer {
+  background-image: linear-gradient(goldenrod, #d0b33e);
+  position: relative;
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  /*height: 100%;*/
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+
+  box-shadow: 10px 10px 10px #505050;
+
+  /*max-width: 3000px;*/
+}
+
+#inner {
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/**********************/
+/**********************/
+/**********************/
+#FieldsetLegend {
+  font-size: 1.25em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  line-height: 10px;
+
+  box-shadow: 10px 10px 10px #505050;
+
+  margin-bottom: 15px;
+}
+
+#FieldsetLegend span {
+  color: mediumblue;
+}
+
+#FieldsetLegend:hover {
+  text-decoration: underline;
+}
+
+/**********************/
+/**********************/
+/**********************/
+input:valid {
+  background-color: lightgreen;    
+}
+
+input:invalid {
+  background-color: lightsalmon;
+}
+
+#PhoneNumberLabel span, #EMailLabel span {
+  font-size: 0.75em;
+  font-style: italic;
+}
+
+#FirstNameHoriz, #LastNameHoriz, #PhoneNumberHoriz, #EMailHoriz {
+  flex: 0 0 50%;    /* flex-grow, flex-shrink, flex-basis */
+}
+
+#SearchContactsHoriz {
+  flex: 0 0 100%;  /* flex-grow, flex-shrink, flex-basis */
+  display: flex;
+  justify-content: center;
+}
+/*https://stackoverflow.com/questions/48101046/force-flex-item-to-span-full-row-width#:~:text=When%20you%20want%20a%20flex,now%20consumes%20all%20available%20space.*/
+
+#FirstName, #LastName, #PhoneNumber, #EMail {
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+#SearchContactsChkBx {
+  margin-bottom: 15px;
+  border-radius: 10px;
+
+  box-shadow: 3px 3px 3px #505050;
+}
+
+#SearchContactsChkBxLabel {
+  margin-left: 5px;
+}
+
+#FirstName, #LastName, #PhoneNumber, #EMail/*, #SearchContactsChkBx*/ {
+  text-align: center;
+  border-radius: 10px;
+
+  font-size: 1.5em;
+  box-shadow: 5px 5px 5px #505050;
+}
+
+/**********************/
+/**********************/
+/**********************/
+#ButtonArea, #ButtonAreaOutsideForm {
+  display: block;
+  text-align: center;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#SearchContacts {
+  display: none;
+}
+
+#CreateContact, #ListContacts, #AddManyContacts, #SearchContacts {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  border-radius: 8px;
+  line-height: 40px;
+  width: 200px;
+
+  box-shadow: 5px 5px 5px #505050;
+}
+
+#CreateContact:hover:enabled, #ListContacts:hover:enabled, #AddManyContacts:hover:enabled, #SearchContacts:hover:enabled {
+  background-color: orange;
+  transition: all .5s ease-in-out;
+}
+
+
+#PrevNext {
+  display: none;
+  text-align: center;
+
+  margin-top: 30px;
+  /*margin-bottom: 15px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Previous, #Next {
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  border-radius: 4px;
+  line-height: 20px;
+  width: 100px;
+
+  box-shadow: 5px 5px 5px #505050;
+}
+
+#Previous:hover:enabled, #Next:hover:enabled {
+  background-color: orange;
+  transition: all .5s ease-in-out;
+}
+
+#PrevNextSeparator {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+}
+
+/**********************/
+/**********************/
+/**********************/
+#ContactDisplay {
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+}
+
+.RecentlyCreatedContactTable, .AllContactsTable {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+
+  box-shadow: 10px 10px 10px #505050;
+}
+
+.RecentlyCreatedContactTable span, .AllContactsTable span {
+  color: mediumblue;
+}
+
+.FirstName {
+  width: 25%;
+}
+
+.LastName {
+  width: 25%;
+}
+
+.PhoneNumber {
+  width: 25%;
+}
+
+.EMail {
+  width: 25%;
+}
+
+.RecentlyCreatedContactTable thead tr th, .AllContactsTable thead tr th {
+    background: linear-gradient(gold, goldenrod);
+    border-top: 1px solid #eefafc;
+    border-bottom: 0px;
+    border-left: 1px solid #eefafc;
+    border-right: 0px;
+    padding: 10px;
+}
+
+.RecentlyCreatedContactTable thead tr:hover, .AllContactsTable thead tr:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.RecentlyCreatedContactTable tbody tr td, .AllContactsTable tbody tr td {
+    border-top: 1px solid #eefafc;
+    border-bottom: 0px;
+    border-left: 1px solid #eefafc;
+    border-right: 0px;
+    padding: 5px;
+}
+
+.RecentlyCreatedContactTable tbody tr:hover, .AllContactsTable tbody tr:hover {
+  background-color: palegoldenrod;
+}
+
+.RecentlyCreatedContactTable caption, .AllContactsTable caption {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.RecentlyCreatedContactTable caption:hover, .AllContactsTable caption:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.RecentlyCreatedContactTable, .RecentlyCreatedContactTable td, .AllContactsTable, .AllContactsTable td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

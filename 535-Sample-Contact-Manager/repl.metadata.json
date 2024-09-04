@@ -1,0 +1,45 @@
+{
+    "id": "48abc6f0-4f38-4640-9770-1b05d74ddc16",
+    "title": "5.3.5 Discussion & Projects - HTML5 Tables, Forms, & Input",
+    "isPrivate": false,
+    "slug": "535-Discussion-and-Projects-HTML5-Tables-Forms-and-Input",
+    "wasPublished": false,
+    "timeCreated": "2022-03-23T20:11:48.412Z",
+    "timeUpdated": "2022-07-20T19:10:10.128Z",
+    "user": {
+        "id": 1659864,
+        "username": "RyanLugtu"
+    },
+    "language": "html",
+    "config": {
+        "isServer": null,
+        "isExtension": null,
+        "gitRemoteUrl": null,
+        "isVnc": null,
+        "doClone": null
+    },
+    "multiplayers": [
+        {
+            "id": 14819549,
+            "username": "EmmaMilley"
+        }
+    ],
+    "source": {
+        "release": {
+            "id": "844f125e-06ac-42e9-a7a1-03562fc547aa",
+            "description": "Dropping the dot from replit in the title",
+            "hostedUrl": "https://release-844f125e-06ac-42e9-a7a1-03562fc547aa.id.repl.co",
+            "user": {
+                "id": 2340280,
+                "username": "SergeiChestakov"
+            }
+        },
+        "deployment": {
+            "id": 105,
+            "domain": null
+        }
+    },
+    "domains": [],
+    "isAlwaysOn": false,
+    "isBoosted": false
+}
