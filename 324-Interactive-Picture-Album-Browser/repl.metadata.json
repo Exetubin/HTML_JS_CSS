@@ -1,0 +1,53 @@
+{
+    "id": "47108f60-465c-476a-8616-2e5a1c00005d",
+    "title": "3.2.4 Discussion and Projects - Arrays (Part 2): Iterators",
+    "isPrivate": false,
+    "slug": "324-Discussion-and-Projects-Arrays-Part-2-Iterators",
+    "wasPublished": false,
+    "timeCreated": "2021-12-20T03:42:03.715Z",
+    "timeUpdated": "2024-04-03T23:48:16.448Z",
+    "user": {
+        "id": 1659864,
+        "username": "RyanLugtu"
+    },
+    "language": "html",
+    "config": {
+        "isServer": null,
+        "isExtension": null,
+        "gitRemoteUrl": null,
+        "isVnc": null,
+        "doClone": null
+    },
+    "multiplayers": [
+        {
+            "id": 12529116,
+            "username": "EllieWan"
+        },
+        {
+            "id": 12809587,
+            "username": "AnotherMinion"
+        },
+        {
+            "id": 12644687,
+            "username": "Nelson02"
+        }
+    ],
+    "source": {
+        "release": {
+            "id": "844f125e-06ac-42e9-a7a1-03562fc547aa",
+            "description": "Dropping the dot from replit in the title",
+            "hostedUrl": "https://release-844f125e-06ac-42e9-a7a1-03562fc547aa.id.repl.co",
+            "user": {
+                "id": 2340280,
+                "username": "SergeiChestakov"
+            }
+        },
+        "deployment": {
+            "id": 105,
+            "domain": null
+        }
+    },
+    "domains": [],
+    "isAlwaysOn": false,
+    "isBoosted": false
+}

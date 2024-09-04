@@ -1,0 +1,109 @@
+html, body {
+  background-color: cornsilk;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#MainSection {
+  width: 70%;
+  /*height: 100%;*/
+  background-color: wheat;
+  border: 1px solid black;
+
+  margin-top: 10px;
+  /*margin-bottom: 10px;*/
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #ed0202;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#MainSection > *:nth-child(1) {
+  flex: 1 1 30%;
+}
+
+#MainSection > *:nth-child(2) {
+  flex: 1 1 70%;
+}
+
+#EnlargedImage {
+  align-items: center;
+  justify-content: center;
+}
+
+.clEnlargedImage {
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #505050;
+
+  margin: 10px;
+
+  width: calc(100% - 30px);
+}
+
+.ImageArea {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImageContainer {
+  margin-bottom: 10px;
+}
+
+.ImageContainer img {
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #505050;
+
+  margin: 10px;
+}
+
+.ImageContainer img:hover {
+  transform: translateY(5px);
+  transition: 0.5s ease-in-out;
+}
+
+.ImageContainer img:active {
+  opacity: 80%;
+  transition: 0.1s ease-in-out;
+}
+
+.RemoveImage {
+  display: none;
+
+  background-color: yellow;
+
+  width: 20%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 10px 10px 10px #505050;
+}
+
+.ImageContainer:hover .RemoveImage {
+  display: block;
+}
+
+.RemoveImage:hover {
+  transform: translateY(-5px);
+  transition: 0.5s ease-in-out;
+}
+
+.RemoveImage:active {
+  opacity: 80%;
+  transition: 0.1s ease-in-out;
+}
+
+footer {
+  margin-top: 10px;  
+}
