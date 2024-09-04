@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <title>Canvas and User Interaction</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+  </head>
+
+  <body>
+
+    <section>
+
+      <header>
+        <h1 id="vidtitle">
+        </h1>
+      </header>
+      
+      <aside id="as1">
+
+        <canvas id="MainCanvas">
+          Sorry! Unfortunately the web browser being used does not support the canvas tag, or scripting has been disabled.
+        </canvas>
+
+      </aside>
+
+      <aside id="as2">
+        <header>
+          <h1 id="CanvasDimensions">
+          </h1>
+        </header>
+
+        <figure>
+          <img src="Images/Tank.png" alt="An Image of a Battle Tank" title="An Image of a Battle Tank" id="vidimg">
+
+          <figcaption id="vidcap">
+            Use ← ↑ ↓ → keys to move the tank, spacebar to stop the tank, and enter key to fire the turret. On a mobile platform (no keyboard), use the HTML buttons to move, stop, and fire the tank turret.
+          </figcaption>
+        </figure>
+      </aside>
+
+      <nav>
+
+        <button id="LF" title="Move Left" data-icon="$" aria-label="Move Left">
+          <!--Move Left-->
+        </button>
+
+        <button id="UP" title="Move Up" data-icon="$" aria-label="Move Up">
+          <!--Move Up-->
+        </button>
+
+        <button id="ST" title="Stop" data-icon=">" aria-label="Stop">
+          <!--Move Up-->
+        </button>
+
+        <button id="FR" title="Fire Turret" data-icon="9" aria-label="Fire Turret">
+          <!--Move Up-->
+        </button>
+
+        <button id="DN" title="Move Down" data-icon="$" aria-label="Move Down">
+          <!--Move Down-->
+        </button>
+
+        <button id="RT" title="Move Right" data-icon="$" aria-label="Move Right">
+          <!--Move Right-->
+        </button>
+
+      </nav>
+
+    </section>
+
+  </body>
+</html>
