@@ -1,0 +1,163 @@
+body{
+  background-color: #343434;
+}
+
+#outer {
+  background-image: linear-gradient(goldenrod, #A050BF);
+  position: relative;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  height: 100%;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+}
+
+#inner {
+  position: relative;
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body article header h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+body article h2 {
+  text-align: left;
+  font-size: 1.5em;
+}
+
+body article h3 {
+  text-align: left;
+  font-size: 1.0em;
+}
+
+body article header h1:hover, body article h2:hover, article h3:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+body article figure {
+  text-align: center;
+}
+
+body article figcaption {
+  font-size: 1em;
+  font-style: italic;
+}
+
+body article footer {
+  line-height: 1.5em;
+  background-image: linear-gradient(gold, goldenrod, gold);
+  border-radius: 8px;
+}
+
+#topnav {
+  position: sticky;
+
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  line-height: 2em;
+
+  background-image: linear-gradient(goldenrod, #343434);
+
+  border-radius: 8px;
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+#topnav p span:hover {
+  background-color: lightgoldenrodyellow /*#9B8400*/;
+  border-radius: 8px;
+  transition: .3s ease-out;
+}
+
+article figure img {
+  border-radius: 8px;
+  width: 30%;
+  transition: all .3s ease-in-out;
+}
+
+article figure img:hover {
+  border-radius: 8px;
+  width: 60%;
+  border: 5px solid black;
+  padding: 5px;
+  transform: scale(1.0);
+}
+
+.IngredientsTable {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.AmountColumn {
+  width: 50%;
+}
+
+.IngredientColumn {
+  width: 50%;
+}
+
+.IngredientsTable thead tr th {
+    background: linear-gradient(gold, goldenrod);
+    border-top: 1px solid #eefafc;
+    border-bottom: 0px;
+    border-left: 1px solid #eefafc;
+    border-right: 0px;
+    padding: 10px;
+}
+
+.IngredientsTable thead tr:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.IngredientsTable tbody tr td {
+    border-top: 1px solid #eefafc;
+    border-bottom: 0px;
+    border-left: 1px solid #eefafc;
+    border-right: 0px;
+    padding: 5px;
+}
+
+.IngredientsTable tbody tr:hover {
+  background-color: palegoldenrod;
+}
+
+.IngredientsTable caption {
+  font-weight: bold;
+  font-size: 1.0em;
+}
+
+.IngredientsTable caption:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.IngredientsTable, .IngredientsTable td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  opacity: 0.85;
+}
