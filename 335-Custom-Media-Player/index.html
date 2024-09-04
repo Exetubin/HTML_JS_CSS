@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <title>Custom Media Player (Showcasing Immediate Drawing Mode)</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+  </head>
+
+  <body onload="init()">
+
+    <section>
+
+      <header>
+        <h1 id="vidtitle">
+        </h1>
+      </header>
+
+      <aside>
+        <!--Need to start the video muted to bypass Chrome autoplay policies. See https://developers.google.com/web/updates/2017/09/autoplay-policy-changes;
+        Actual video dimensions are width = 854, height = 481-->
+        <video id="mainVid" muted>
+          Sorry, but your browser does not support the format of the video being played.
+        </video>
+
+        <div>
+          <video id="previousVid" muted loop>
+            Sorry, but your browser does not support the format of the video being played.
+          </video>
+          <video id="nextVid" muted loop>
+            Sorry, but your browser does not support the format of the video being played.
+          </video>
+
+          <canvas id="previousVidCanv">
+            Sorry! Unfortunately the web browser being used does not support the canvas tag, or scripting has been disabled.
+          </canvas>
+          <canvas id="nextVidCanv">
+            Sorry! Unfortunately the web browser being used does not support the canvas tag, or scripting has been disabled.
+          </canvas>
+        </div>
+      </aside>
+
+      <figure>
+        <img id="vidimg">
+        </img>
+        <figcaption id="vidcap">
+        </figcaption>
+      </figure>
+
+      <nav>
+          <button id="RW" title="Rewind" onclick="rewind()" data-icon="<" aria-label="Rewind">
+            <!--Rewind-->
+          </button>
+
+          <button id="PR" title="Previous Video" onclick="loadAndplayPreviousVideo()" data-icon="&" aria-label="Previous Video">
+            <!--Previous Video-->
+          </button>
+
+          <button id="PP" title="Pause" onclick="playPause()" data-icon=">" aria-label="Pause">
+            <!--Play / Pause-->
+          </button>
+
+          <button id="NX" title="Next Video" onclick="loadAndplayNextVideo()" data-icon="%" aria-label="Next Video">
+            <!--Next Video-->
+          </button>
+
+          <button id="FF" title="Fast Forward" onclick="fastForward()" data-icon="<" aria-label="Fast Forward">
+            <!--Fast Forward-->
+          </button>
+
+          <button id="MU" title="Unmute" onclick="muteUnmute()" data-icon="g" aria-label="Unmute">
+            <!--Mute / Unmute-->
+          </button>
+
+          <button id="VC" title="Enable Video Control Overlay" onclick="enableDisableVideoControls()" data-icon="~" aria-label="Enable Video Control Overlay">
+            <!--Enable / Disable Video Control Overlay-->
+          </button>
+      </nav>
+
+    </section>
+
+  </body>
+</html>

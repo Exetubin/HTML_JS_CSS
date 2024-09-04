@@ -1,0 +1,137 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+
+  background-color: cornsilk;
+}
+
+@font-face {
+    font-family: 'Multimedia_Icons_Regular';
+    src: url('Fonts/multimedia_icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+  background-color: #343434;
+  position: relative;
+
+  max-width: 50%;
+  min-width: 1200px;
+
+  border-radius: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+  padding: 10px;
+}
+
+section aside {
+  position: relative;
+}
+
+section header, section aside video, section nav, section figure img, section figure figcaption {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+section header {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+
+  margin-top: -20px;
+
+  line-height: 40px;  
+}
+
+section aside video {
+  position: relative;
+
+  max-width: 60%;
+
+  float: left;
+  /*clear: left;*/
+  text-align: center;
+
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+section figure {
+  position: relative;
+
+  max-width: 35%;
+
+  float: right;
+  /*clear: right;*/
+
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+section figure img {
+  position: relative;
+
+  max-width: 100%;
+
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+section figure figcaption {
+  position: relative;
+
+  max-width: 100%;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 25px;
+
+  margin-right: -10px;
+  padding: 5px;
+}
+
+section nav {
+  position: relative;
+
+  max-width: 60%;
+
+  clear: both;
+
+  display: block;
+  text-align: center;
+
+  padding: 5px;
+}
+
+button {
+  font-family: Multimedia_Icons_Regular;
+  font-size: 30px;
+  color: goldenrod;
+  text-shadow: 1px 1px 0px black;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+}
+
+button:before {
+  content: attr(data-icon);
+}
+
+#FF {
+  transform: rotate(180deg); 
+}
+
+#previousVid, #nextVid {
+  display: none;
+}
+
+#previousVidCanv:hover, #nextVidCanv:hover {
+  cursor: pointer;
+}

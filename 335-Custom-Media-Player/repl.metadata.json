@@ -1,0 +1,35 @@
+{
+    "id": "fd579dbd-d87b-4c54-a6f0-1c865cd19d7f",
+    "title": "3.3.5 Discussion and Projects - Immediate Drawing Mode",
+    "isPrivate": false,
+    "slug": "335-Discussion-and-Projects-Immediate-Drawing-Mode",
+    "wasPublished": false,
+    "timeCreated": "2021-03-04T21:37:38.262Z",
+    "timeUpdated": "2021-03-04T21:37:59.879Z",
+    "user": {
+        "id": 1659864,
+        "username": "RyanLugtu"
+    },
+    "language": "html",
+    "config": {
+        "isServer": false,
+        "isExtension": null,
+        "gitRemoteUrl": null,
+        "isVnc": false,
+        "doClone": null
+    },
+    "multiplayers": [
+        {
+            "id": 1591043,
+            "username": "KyleBruce"
+        },
+        {
+            "id": 8562582,
+            "username": "Aerosiderite"
+        }
+    ],
+    "source": null,
+    "domains": [],
+    "isAlwaysOn": false,
+    "isBoosted": false
+}
